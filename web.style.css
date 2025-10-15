@@ -1,0 +1,12 @@
+header{
+    text-align: right;
+}
+
+
+div{
+    display: flex;
+    /* Show the flex items horizontally */
+    flex-direction: row;
+  
+}
+
