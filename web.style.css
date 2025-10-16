@@ -1,12 +1,46 @@
-header{
-    text-align: right;
+
+*{
+  box-sizing: border-box;
 }
 
 
-div{
-    display: flex;
-    /* Show the flex items horizontally */
-    flex-direction: row;
+nav{
+    text-align: right;
   
+}
+
+/*selects all the <a> tags that are descendents of the <nav> element */
+
+nav a{
+  padding: 0.5rem 0.5rem;
+  background-color: lightcyan;
+}
+
+
+
+
+
+.section{
+  float: left;
+  width: 33.33%;
+  padding: 13px;
+  min-height: 350px;
+  border: 1px solid;
+  text-align: center;
+}
+
+
+.container:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* to make the columns responsive */
+
+@media screen and (max-width: 768px) {
+  .section{
+    width: 100%; /* a screen below 768px, each column goes to 100%*/
+  }
 }
 
