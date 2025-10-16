@@ -1,4 +1,3 @@
-
 *{
   box-sizing: border-box;
 }
@@ -9,6 +8,14 @@ nav{
   
 }
 
+div{
+border: 1px solid black;
+
+}
+
+
+
+
 /*selects all the <a> tags that are descendents of the <nav> element */
 
 nav a{
@@ -17,7 +24,20 @@ nav a{
 }
 
 
+.project-item{
+  position: relative;
+  padding: 1rem 0;
+  font-size: 1.2rem;
 
+}
+
+
+
+.section hr{
+  border: solid;
+  text-decoration-line:line-through;
+  
+}
 
 
 .section{
@@ -36,11 +56,15 @@ nav a{
   clear: both;
 }
 
+
+
 /* to make the columns responsive */
 
+/*
 @media screen and (max-width: 768px) {
   .section{
     width: 100%; /* a screen below 768px, each column goes to 100%*/
-  }
+  /*}
 }
+  */
 
