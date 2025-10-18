@@ -14,6 +14,24 @@ border: 1px solid black;
 }
 
 
+/*Projects list: lines between each project item */
+h2#projects + ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+h2#projects + ul li.project-item {
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid black; /* line between project items */
+  display: block;
+}
+
+h2#projects + ul li.project-item:last-child{
+  border-bottom:  none; /* makes sure that there is no line after the last item*/
+}
+
 
 
 /*selects all the <a> tags that are descendents of the <nav> element */
@@ -28,6 +46,12 @@ nav a{
   position: relative;
   padding: 1rem 0;
   font-size: 1.2rem;
+  /* make all project boxes a uniform size and center their content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px; /* adjust this value to make boxes taller/shorter */
+  box-sizing: border-box;
 
 }
 
@@ -55,16 +79,4 @@ nav a{
   display: table;
   clear: both;
 }
-
-
-
-/* to make the columns responsive */
-
-/*
-@media screen and (max-width: 768px) {
-  .section{
-    width: 100%; /* a screen below 768px, each column goes to 100%*/
-  /*}
-}
-  */
 
