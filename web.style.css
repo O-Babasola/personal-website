@@ -14,7 +14,7 @@ border: 1px solid black;
 }
 
 
-/*Projects list: lines between each project item */
+/*Projects list: lines between each project item and removes bullet points*/
 h2#projects + ul{
   list-style: none;
   margin: 0;
@@ -79,4 +79,5 @@ nav a{
   display: table;
   clear: both;
 }
+
 
