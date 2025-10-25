@@ -1,3 +1,4 @@
+
 *{
   box-sizing: border-box;
 }
@@ -5,12 +6,10 @@
 
 nav{
     text-align: right;
-  
 }
 
 div{
 border: 1px solid black;
-
 }
 
 
@@ -33,9 +32,7 @@ h2#projects + ul li.project-item:last-child{
 }
 
 
-
 /*selects all the <a> tags that are descendents of the <nav> element */
-
 nav a{
   padding: 0.5rem 0.5rem;
   background-color: lightcyan;
@@ -56,11 +53,9 @@ nav a{
 }
 
 
-
 .section hr{
   border: solid;
   text-decoration-line:line-through;
-  
 }
 
 
@@ -85,27 +80,53 @@ nav a{
 #To do: Add space between each section please 
 */
 .reviews > section{
-  line-height: 20px;
+  line-height: 15px;
   display: inline-block;
   padding: 10px 30px;
-  border: 1.5px solid forestgreen;
+  border: 1.5px solid black;
   border-radius: 999px;
   text-align: center;
-
-}
-
-/* To make the review sections as columns */
-
-
-
-.reviews{
-  float: center;
   max-width: 100%;
   padding: 12px;
-  min-height: 350px;
-  border: 1px solid;
-  text-align: center;
+  margin-bottom: 10px;
 }
 
+/* To make the review title on its own row and the section sit in a row beneath */
 
+.reviews{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: center;
+}
 
+/* make the title occupy the full width so it doesn't sit beside the sections */
+.reviews > h2{
+  flex: 1 1 100%;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 12px;
+}
+
+/* lay out the three review sections across the page */
+.reviews > section{
+  box-sizing: border-box;
+  flex: 0 0 calc((100% - 24px) / 3); /* two gaps of 12px */
+  max-width: calc((100% - 24px) / 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border: 1.5px solid black;
+  border-radius: 12px; /* change to 50% for circles */
+  text-align: center;
+  overflow: hidden;
+}
+
+/* to make the columns responsive */
+@media screen and (max-width: 768px) {
+  .section{
+    width: 100%; /* a screen below 768px, each column goes to 100%*/
+  }
+}
