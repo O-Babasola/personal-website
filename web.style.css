@@ -2,6 +2,10 @@ h1{
   text-align: center;
 }
 
+.project-item:hover{
+  background-color: lightgrey;
+}
+
 header p{
   text-align: center;
   color: grey;
@@ -179,6 +183,7 @@ ul{
     height: auto; /* allows taller boxes on very small screen */
   }
 }
+
 
 
 
