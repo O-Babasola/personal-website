@@ -1,3 +1,23 @@
+h1{
+  text-align: center;
+}
+
+header p{
+  text-align: center;
+  color: grey;
+  padding-bottom: 40px;
+}
+
+#contact{
+  text-align: left;
+}
+
+footer p{
+  text-align: center;
+  padding-top: 40px;
+}
+
+
 *{
   box-sizing: border-box;
 }
@@ -7,9 +27,6 @@ nav{
     text-align: right;
 }
 
-div{
-border: 1px solid black;
-}
 
 
 /*Projects list: lines between each project item and removes bullet points */
@@ -32,10 +49,11 @@ h2#projects + ul li.project-item:last-child{
 
 
 /*selects all the <a> tags that are descendents of the <nav> element */
-nav a{
+nav a:hover{
   padding: 0.5rem 0.5rem;
   background-color: lightcyan;
 }
+
 
 
 .project-item{
@@ -67,6 +85,9 @@ nav a{
   text-align: center;
 }
 
+.container{
+  border: 1px solid black;
+}
 
 .container:after{
   content: "";
@@ -74,21 +95,10 @@ nav a{
   clear: both;
 }
 
-
-/* creates a rectangular circle around each review item 
-#To do: Add space between each section please 
-*/
-.reviews > section{
-  line-height: 15px;
-  display: inline-block;
-  padding: 10px 30px;
+.reviews{
   border: 1.5px solid black;
-  border-radius: 999px;
-  text-align: center;
-  max-width: 100%;
-  padding: 12px;
-  margin-bottom: 10px;
 }
+
 
 /* To make the review title on its own row and the section sit in a row beneath */
 .reviews{
@@ -97,6 +107,7 @@ nav a{
   gap: 12px;
   align-items: flex-start;
   justify-content: center;
+  padding: 30px;
 
 }
 
@@ -132,9 +143,25 @@ nav a{
   margin-top: 8px;
 }
 
+
+blockquote p:hover{
+color: blue;
+}
+
+.reviews .review-author:hover{
+  color: lightskyblue;
+}
+
+
 .reviews blockquote{
   margin: 0;
   padding: 8px;
+}
+
+
+ul{
+  list-style-position: inside;
+  list-style-type: square;
 }
 
 
@@ -152,3 +179,7 @@ nav a{
     height: auto; /* allows taller boxes on very small screen */
   }
 }
+
+
+
+
