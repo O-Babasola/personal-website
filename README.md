@@ -27,7 +27,6 @@ This is a single-page personal website draft showcasing the frontend development
 
 ## File Structure
 personal-website/
-│
 ├─ index.html # Main HTML file
 ├─ web.style.css # Stylesheet for the website
 
@@ -51,7 +50,8 @@ personal-website/
 
 ## Author
 **Oluwatise** – Self-taught Frontend Developer | Still learning and building projects
-- GitHub: [https://github.com/O-Babasola](https://github.com/O-Babasola)
+
+GitHub: [https://github.com/O-Babasola](https://github.com/O-Babasola)
 
 ---
 
