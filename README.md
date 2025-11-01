@@ -3,7 +3,7 @@
 ## 📖 Overview
 This is a single-page personal website draft showcasing the frontend development projects, work experience, education, and reviews/comments. The website is built with **HTML** and **CSS** and is responsive for various screen sizes.  
 
-> ⚠️**NOTE** This project is not a representation of all that I have done. It is importnat to note that it is a **DRAFT**
+> ⚠️**NOTE** This project is not a representation of all that I have done. It is importnat to note that it is a **DRAFT**.
 
 ---
 
