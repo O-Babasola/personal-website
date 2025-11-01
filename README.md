@@ -1,7 +1,7 @@
-# Personal Portfolio Website
+# Personal Portfolio Page Draft
 
 ## Overview
-This is a single-page personal website showcasing the frontend development projects, work experience, education, and reviews/comments. The website is built with **HTML** and **CSS** and is fully responsive for various screen sizes.  
+This is a single-page personal website draft showcasing the frontend development projects, work experience, education, and reviews/comments. The website is built with **HTML** and **CSS** and is fully responsive for various screen sizes.  
 
 ---
 
@@ -39,3 +39,19 @@ personal-website/
 3. Optional: Edit the HTML or CSS to customize content, projects, education, or styling.
 
 ---
+
+## Future Improvements
+- Add a **Contact Form** for better user interaction.
+- Add **images/icons** to projects and reviews.
+- Improve accessibility (ARIA attributes, alt text for images).
+- Minify CSS for performance.
+- Add smooth animations and transitions to enhance UX.
+
+---
+
+## Author
+**Oluwatise** – Self-taught Frontend Developer | Still learning and building projects
+GitHub: [https://github.com/O-Babasola](https://github.com/O-Babasola)
+
+---
+
