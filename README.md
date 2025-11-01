@@ -50,7 +50,7 @@ personal-website
 ---
 
 ## 👤 Author
-**Oluwatise** – Self-taught Frontend Developer | Still learning and building projects 💻
+**FrontendFuel** – Self-taught Frontend Developer | Still learning and building projects 💻
 
 **GitHub**: [https://github.com/O-Babasola](https://github.com/O-Babasola)
 
