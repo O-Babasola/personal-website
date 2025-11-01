@@ -45,13 +45,14 @@ personal-website
 - Improve accessibility (ARIA attributes, alt text for images).
 - Minify CSS for performance.
 - Add smooth animations and transitions to enhance UX.
+- Make code **fully** responsive for various screen sizes.
 
 ---
 
 ## Author
 **Oluwatise** – Self-taught Frontend Developer | Still learning and building projects
 
-GitHub: [https://github.com/O-Babasola](https://github.com/O-Babasola)
+**GitHub**: [https://github.com/O-Babasola](https://github.com/O-Babasola)
 
 ---
 
