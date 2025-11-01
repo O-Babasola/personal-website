@@ -1,7 +1,7 @@
 # Personal Portfolio Page Draft
 
 ## Overview
-This is a single-page personal website draft showcasing the frontend development projects, work experience, education, and reviews/comments. The website is built with **HTML** and **CSS** and is fully responsive for various screen sizes.  
+This is a single-page personal website draft showcasing the frontend development projects, work experience, education, and reviews/comments. The website is built with **HTML** and **CSS** and is responsive for various screen sizes.  
 
 ---
 
