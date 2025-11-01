@@ -26,7 +26,7 @@ This is a single-page personal website draft showcasing the frontend development
 ---
 
 ## File Structure
-personal-website/
+personal-website
 ├─ index.html # Main HTML file
 ├─ web.style.css # Stylesheet for the website
 
