@@ -1,16 +1,55 @@
+
+body{
+  overflow-x: hidden; /* prevents horizontal scroll bar */
+}
+
 h1{
   text-align: center;
 }
 
-.project-item:hover{
-  background-color: lightgrey;
-}
-
-header p{
+.intro p{
   text-align: center;
   color: grey;
   padding-bottom: 40px;
 }
+
+#name{
+  font-size: 1.2rem;
+  color: grey;
+  margin: 0; /* removes extra space */
+}
+
+
+nav{
+    text-align: right;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  white-space: nowrap; /*keeps them on one line */
+}
+
+/*selects all the <a> tags that are descendents of the <nav> element */
+nav a:hover{
+  padding: 0.5rem 0.5rem;
+  background-color: lightcyan;
+  transition: all 0.3s ease;
+  flex-wrap: nowrap;
+  white-space: nowrap; /* forces all links to stay on 1 line */
+}
+
+.top-header{
+  display: flex;
+  flex-direction: row; /* aligns items in a row */
+  justify-content: space-between; /* pushes name to left, nav to right */
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  /* border-bottom: 1px solid #000;  optional separator */
+}
+
 
 #contact{
   text-align: left;
@@ -27,10 +66,9 @@ footer p{
 }
 
 
-nav{
-    text-align: right;
+body{
+  scroll-behavior: smooth;
 }
-
 
 
 /*Projects list: lines between each project item and removes bullet points */
@@ -52,12 +90,10 @@ h2#projects + ul li.project-item:last-child{
 }
 
 
-/*selects all the <a> tags that are descendents of the <nav> element */
-nav a:hover{
-  padding: 0.5rem 0.5rem;
-  background-color: lightcyan;
-}
 
+.project-item:hover{
+  background-color: lightgrey;
+}
 
 
 .project-item{
@@ -117,11 +153,13 @@ nav a:hover{
 
 /* make the title occupy the full width so it doesn't sit beside the sections */
 .reviews > h2{
-  flex: 1 1 100%;
+  flex: 1 1 100%; 
   width: 100%;
   text-align: left;
   margin: 20px 0 12px;
+/* add to make sure that reviews/comment title does not hang out when webpage is smaller screen*/
 }
+
 
 /* lay out the three review sections across the page */
 .reviews > section{
@@ -153,7 +191,11 @@ color: blue;
 }
 
 .reviews .review-author:hover{
-  color: lightskyblue;
+  color: red;
+}
+
+.reviews:hover{
+  background-color: lightcyan;
 }
 
 
@@ -169,6 +211,15 @@ ul{
 }
 
 
+@media screen and (max-width: 300px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: none; /* optional to reduce width */
+  }
+}
+
 /* to make the columns responsive */
 @media screen and (max-width: 768px) {
   .section{
@@ -183,6 +234,51 @@ ul{
     height: auto; /* allows taller boxes on very small screen */
   }
 }
+
+/*Responsive behaviour: stack name above nav on smaller screens */
+@media screen and (max-width: 300px){
+  .top-header{
+    flex-direction: column; /* stack items vertically */
+     align-items: center; /* centers them horizontally */
+     text-align: center;
+  }
+
+  #name{
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 110%;
+  }
+
+  nav a{
+    flex-shrink: 1;
+    font-size: 0.72rem;
+    margin: 0 4px;
+    white-space: nowrap;
+  }
+
+  nav::-webkit-scrollbar{
+    display: none;
+  }
+
+}
+
+
+@media screen and (max-width: 300px){
+ .reviews > h2{
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 0 4px;
+  width: 100%; /* ensures it fits the full width */
+  white-space: normal; /* allows text to wrap if needed */
+ }
+}
+
 
 
 
