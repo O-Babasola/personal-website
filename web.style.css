@@ -1,5 +1,6 @@
 
-body{
+
+html, body{
   overflow-x: hidden; /* prevents horizontal scroll bar */
 }
 
@@ -19,6 +20,11 @@ h1{
   margin: 0; /* removes extra space */
 }
 
+#name:hover{
+  background-color: lightcyan;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0.5rem;
+}
 
 nav{
     text-align: right;
@@ -92,7 +98,7 @@ h2#projects + ul li.project-item:last-child{
 
 
 .project-item:hover{
-  background-color: lightgrey;
+  background-color: rgb(240, 239, 239);
 }
 
 
@@ -117,16 +123,20 @@ h2#projects + ul li.project-item:last-child{
 
 
 .section{
-  float: left;
-  width: 33.33%;
+  flex: 1; /*makes all sections equal width */
   padding: 13px;
   min-height: 350px;
   border: 1px solid;
   text-align: center;
+  box-sizing: border-box; 
 }
 
 .container{
   border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  align-items: stretch; /* makes all the columns of equal height */
 }
 
 .container:after{
@@ -135,29 +145,30 @@ h2#projects + ul li.project-item:last-child{
   clear: both;
 }
 
-.reviews{
-  border: 1.5px solid black;
-}
 
 
 /* To make the review title on its own row and the section sit in a row beneath */
 .reviews{
+  border: 1.5px solid black;
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
   align-items: flex-start;
   justify-content: center;
   padding: 30px;
-
+  box-sizing: border-box;
+  overflow: visible; /* prevent scrollbars */
+  align-items: stretch; /* ensures all child sections have equal height */
 }
 
 /* make the title occupy the full width so it doesn't sit beside the sections */
 .reviews > h2{
-  flex: 1 1 100%; 
+   flex: 1 1 100%;
   width: 100%;
-  text-align: left;
-  margin: 20px 0 12px;
-/* add to make sure that reviews/comment title does not hang out when webpage is smaller screen*/
+  text-align: center;          /* center horizontally */
+  margin: 10px 0 20px;
+  font-size: 1.5rem;
+  word-wrap: break-word;       /* wrap long text if needed */
 }
 
 
@@ -173,8 +184,7 @@ h2#projects + ul li.project-item:last-child{
   border: 1.5px solid black;
   border-radius: 12px; /* change to 50% for circles */
   text-align: center;
-  overflow: auto;
-  height: 150px;
+  
 }
 
 .reviews .review-author{
@@ -195,7 +205,7 @@ color: blue;
 }
 
 .reviews:hover{
-  background-color: lightcyan;
+  background-color: rgb(236, 237, 243);
 }
 
 
@@ -227,16 +237,10 @@ ul{
   }
 }
 
-@media (max-width: 480px){
-  .reviews > section{
-    flex: 0 0 100%;
-    max-width: 100%;
-    height: auto; /* allows taller boxes on very small screen */
-  }
-}
+
 
 /*Responsive behaviour: stack name above nav on smaller screens */
-@media screen and (max-width: 300px){
+@media screen and (max-width: 600px){
   .top-header{
     flex-direction: column; /* stack items vertically */
      align-items: center; /* centers them horizontally */
@@ -257,7 +261,7 @@ ul{
 
   nav a{
     flex-shrink: 1;
-    font-size: 0.72rem;
+    font-size: 0.8rem;
     margin: 0 4px;
     white-space: nowrap;
   }
@@ -270,14 +274,42 @@ ul{
 
 
 @media screen and (max-width: 300px){
- .reviews > h2{
-  text-align: center;
-  font-size: 1.1rem;
-  padding: 0 4px;
-  width: 100%; /* ensures it fits the full width */
-  white-space: normal; /* allows text to wrap if needed */
+ .reviews{
+  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+    max-width: auto;
  }
+
+ .reviews > h2 {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0 8px;     /* small padding to prevent text clipping */
+    width: 100%;
+    white-space: normal; 
+ }
+
+ .reviews > section {
+    flex: 0 0 100%;      /* stack boxes vertically */
+    max-width: 100%;
+    height: auto;
+  }
 }
+
+
+@media screen and (max-width: 300px){
+  .section ul{
+    text-align: center;
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 0 auto; /* centers the list block */
+    width: 100%; 
+  }
+}
+
+
 
 
 
