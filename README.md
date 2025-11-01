@@ -24,3 +24,18 @@ This is a single-page personal website showcasing the frontend development proje
 - Smooth scrolling using CSS property `scroll-behavior: smooth`
 
 ---
+
+## File Structure
+personal-website/
+│
+├─ index.html # Main HTML file
+├─ web.style.css # Stylesheet for the website
+
+---
+
+## Usage
+1. Clone the repository or download the files.
+2. Open `index.html` in any web browser to view the website.
+3. Optional: Edit the HTML or CSS to customize content, projects, education, or styling.
+
+---
