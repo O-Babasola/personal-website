@@ -39,7 +39,7 @@ personal-website
 
 ---
 
-## Future Improvements
+## 🚀Future Improvements
 - Add a **Contact Form** for better user interaction.
 - Add **images/icons** to projects and reviews.
 - Improve accessibility (ARIA attributes, alt text for images).
@@ -49,7 +49,7 @@ personal-website
 
 ---
 
-## Author
+## 👤 Author
 **Oluwatise** – Self-taught Frontend Developer | Still learning and building projects 💻
 
 **GitHub**: [https://github.com/O-Babasola](https://github.com/O-Babasola)
