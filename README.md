@@ -56,9 +56,10 @@ personal-website
 
 **GitHub**: [https://github.com/O-Babasola](https://github.com/O-Babasola)
 
-This is linked to one of the projects that I did 
-[https://roadmap.sh/projects/basic-html-website](https://roadmap.sh/projects/basic-html-website).
+This is linked to some of the projects that I did: 
+- [https://roadmap.sh/projects/basic-html-website](https://roadmap.sh/projects/basic-html-website).
 
-This is linked to one of the projects that I did [https://roadmap.sh/projects/portfolio-website](https://roadmap.sh/projects/portfolio-website).
+- [https://roadmap.sh/projects/portfolio-website](https://roadmap.sh/projects/portfolio-website)
+
 ---
 
