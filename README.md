@@ -1,7 +1,7 @@
 # Personal Portfolio Page Draft
 
 ## 📖 Overview
-This is a single-page personal website draft showcasing the frontend development projects, work experience, education, and reviews/comments. The website is built with **HTML** and **CSS** and is responsive for various screen sizes.  
+This is a single-page personal website draft showcasing the frontend development projects, work experience, education, and reviews/comments. The website is built with **HTML** and **CSS** and is fully responsive for various screen sizes.  
 
 > ⚠️**NOTE** This project is not a representation of all that I have done. It is importnat to note that it is a **DRAFT**.
 
@@ -47,8 +47,6 @@ personal-website
 - Improve accessibility (ARIA attributes, alt text for images).
 - Minify CSS for performance.
 - Add smooth animations and transitions to enhance UX.
-- Make code **fully** responsive for various screen sizes.
-
 ---
 
 ## 👤 Author
