@@ -1,34 +1,50 @@
+*{
+  box-sizing: border-box;
+}
 
+/* prevents horizontal scroll bar on the entire page */
 html, body{
   overflow-x: hidden; /* prevents horizontal scroll bar */
 }
 
-h1{
-  text-align: center;
+/* enables smooth scrolling for anchor links */
+body{
+  scroll-behavior: smooth;
 }
 
-.intro p{
-  text-align: center;
-  color: grey;
-  padding-bottom: 40px;
-}
-
+/* styles the name in the header */
 #name{
   font-size: 1.2rem;
   color: grey;
   margin: 0; /* removes extra space */
 }
 
+
+/* hover effect for name in header */
 #name:hover{
   background-color: lightcyan;
   transition: all 0.3s ease;
   padding: 0.5rem 0.5rem;
 }
 
+/* styles the top header containing name and nav */
+.top-header{
+  display: flex;
+  flex-direction: row; /* aligns items in a row */
+  justify-content: space-between; /* pushes name to left, nav to right */
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  /* border-bottom: 1px solid #000;  optional separator */
+}
+
+
+/* moves nav to the right */
 nav{
     text-align: right;
 }
 
+/* targets all the links in nav */
 nav a{
   text-decoration: none;
   color: black;
@@ -45,36 +61,49 @@ nav a:hover{
   white-space: nowrap; /* forces all links to stay on 1 line */
 }
 
-.top-header{
-  display: flex;
-  flex-direction: row; /* aligns items in a row */
-  justify-content: space-between; /* pushes name to left, nav to right */
-  align-items: center;
-  padding: 10px 20px;
-  flex-wrap: wrap;
-  /* border-bottom: 1px solid #000;  optional separator */
-}
-
-
-#contact{
-  text-align: left;
-}
-
-footer p{
+/* centers the h1 in the intro section */
+h1{
   text-align: center;
-  padding-top: 40px;
 }
 
-
-*{
-  box-sizing: border-box;
+/* styles the paragraph in the intro section */
+.intro p{
+  text-align: center;
+  color: grey;
+  padding-bottom: 40px;
 }
 
-
-body{
-  scroll-behavior: smooth;
+/* styles the container that holds the project cards */
+.container{
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  align-items: stretch; /* makes all the columns of equal height */
 }
 
+/* clearfix for container */
+.container:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* styles each project card */
+.section{
+  flex: 1; /*makes all sections equal width */
+  padding: 13px;
+  min-height: 350px;
+  border: 1px solid;
+  text-align: center;
+  box-sizing: border-box; 
+}
+
+/* styles the horizontal rule in each section */
+.section hr{
+  border: solid;
+  text-decoration-line:line-through;
+} 
 
 /*Projects list: lines between each project item and removes bullet points */
 h2#projects + ul{
@@ -83,24 +112,26 @@ h2#projects + ul{
   padding: 0;
 }
 
+/* styles the project list to have square bullets inside the text */
+ul{
+  list-style-position: inside;
+  list-style-type: square;
+}
 
+/* styles each project item in the projects list */
 h2#projects + ul li.project-item {
   padding: 0.75rem 1rem;
   border-bottom: 2px solid black; /* line between project items */
   display: block;
 }
 
+/* removes the border from the last project item */
 h2#projects + ul li.project-item:last-child{
   border-bottom:  none; /* makes sure that there is no line after the last item*/
 }
 
 
-
-.project-item:hover{
-  background-color: rgb(240, 239, 239);
-}
-
-
+/* styles the content inside each project item */
 .project-item{
   position: relative;
   padding: 1rem 0;
@@ -112,39 +143,12 @@ h2#projects + ul li.project-item:last-child{
   min-height: 72px; /* adjust this value to make boxes taller/shorter */
   height: auto; /*grows with content */
   box-sizing: border-box;
-
 }
 
-
-.section hr{
-  border: solid;
-  text-decoration-line:line-through;
+/* hover effect for project items */
+.project-item:hover{
+  background-color: rgb(240, 239, 239);
 }
-
-
-.section{
-  flex: 1; /*makes all sections equal width */
-  padding: 13px;
-  min-height: 350px;
-  border: 1px solid;
-  text-align: center;
-  box-sizing: border-box; 
-}
-
-.container{
-  border: 1px solid black;
-  display: flex;
-  flex-wrap: wrap;
-  border: 1px solid black;
-  align-items: stretch; /* makes all the columns of equal height */
-}
-
-.container:after{
-  content: "";
-  display: table;
-  clear: both;
-}
-
 
 
 /* To make the review title on its own row and the section sit in a row beneath */
@@ -161,6 +165,11 @@ h2#projects + ul li.project-item:last-child{
   align-items: stretch; /* ensures all child sections have equal height */
 }
 
+/* hover effect for the reviews container */
+.reviews:hover{
+  background-color: rgb(236, 237, 243);
+}
+
 /* make the title occupy the full width so it doesn't sit beside the sections */
 .reviews > h2{
    flex: 1 1 100%;
@@ -170,7 +179,6 @@ h2#projects + ul li.project-item:last-child{
   font-size: 1.5rem;
   word-wrap: break-word;       /* wrap long text if needed */
 }
-
 
 /* lay out the three review sections across the page */
 .reviews > section{
@@ -184,9 +192,20 @@ h2#projects + ul li.project-item:last-child{
   border: 1.5px solid black;
   border-radius: 12px; /* change to 50% for circles */
   text-align: center;
-  
 }
 
+/* styles the blockquote inside each review section */
+.reviews blockquote{
+  margin: 0;
+  padding: 8px;
+}
+
+/* styles the blockquote inside each review section */
+blockquote p:hover{
+color: blue;
+}
+
+/* styles the review text */
 .reviews .review-author{
   color: grey;
   display: block;
@@ -195,46 +214,16 @@ h2#projects + ul li.project-item:last-child{
   margin-top: 8px;
 }
 
-
-blockquote p:hover{
-color: blue;
-}
-
+/* hover effect for review author */
 .reviews .review-author:hover{
   color: red;
 }
 
-.reviews:hover{
-  background-color: rgb(236, 237, 243);
-}
 
-
-.reviews blockquote{
-  margin: 0;
-  padding: 8px;
-}
-
-
-ul{
-  list-style-position: inside;
-  list-style-type: square;
-}
-
-
-@media screen and (max-width: 300px){
-  .container{
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    border: none; /* optional to reduce width */
-  }
-}
-
-/* to make the columns responsive */
-@media screen and (max-width: 768px) {
-  .section{
-    width: 100%; /* a screen below 768px, each column goes to 100%*/
-  }
+/* styles the footer paragraph */
+footer p{
+  text-align: center;
+  padding-top: 40px;
 }
 
 
@@ -268,10 +257,39 @@ ul{
   nav::-webkit-scrollbar{
     display: none;
   }
+}
 
+/*Responsive behaviour: stack project sections vertically on very small screens */
+@media screen and (max-width: 300px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: none; /* optional to reduce width */
+  }
 }
 
 
+/* to make the columns responsive */
+@media screen and (max-width: 768px) {
+  .section{
+    width: 100%; /* a screen below 768px, each column goes to 100%*/
+  }
+}
+
+/*Responsive behaviour: center project list on very small screens */
+@media screen and (max-width: 300px){
+  .section ul{
+    text-align: center;
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 0 auto; /* centers the list block */
+    width: 100%; 
+  }
+}
+
+
+/*Responsive behaviour: stack review sections vertically on very small screens */
 @media screen and (max-width: 300px){
  .reviews{
   flex-direction: column;
@@ -297,14 +315,4 @@ ul{
   }
 }
 
-
-@media screen and (max-width: 300px){
-  .section ul{
-    text-align: center;
-    list-style-position: inside;
-    padding-left: 0;
-    margin: 0 auto; /* centers the list block */
-    width: 100%; 
-  }
-}
 
