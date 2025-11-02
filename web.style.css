@@ -1,5 +1,4 @@
 
-
 html, body{
   overflow-x: hidden; /* prevents horizontal scroll bar */
 }
@@ -110,7 +109,8 @@ h2#projects + ul li.project-item:last-child{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 72px; /* adjust this value to make boxes taller/shorter */
+  min-height: 72px; /* adjust this value to make boxes taller/shorter */
+  height: auto; /*grows with content */
   box-sizing: border-box;
 
 }
@@ -238,7 +238,6 @@ ul{
 }
 
 
-
 /*Responsive behaviour: stack name above nav on smaller screens */
 @media screen and (max-width: 600px){
   .top-header{
@@ -256,7 +255,7 @@ ul{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    width: 110%;
+    width: 100%;
   }
 
   nav a{
@@ -308,11 +307,4 @@ ul{
     width: 100%; 
   }
 }
-
-
-
-
-
-
-
 
