@@ -82,12 +82,6 @@ h1{
   align-items: stretch; /* makes all the columns of equal height */
 }
 
-/* clearfix for container */
-.container:after{
-  content: "";
-  display: table;
-  clear: both;
-}
 
 /* styles each project card */
 .section{
@@ -314,5 +308,6 @@ footer p{
     height: auto;
   }
 }
+
 
 
